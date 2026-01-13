@@ -12,7 +12,6 @@ import ejemploSubasta.*;
  * @author M. L. Liu & Gemini
  */
 public class ServidorSubasta {
-
     // *** NUEVAS CONSTANTES ***
     public static final double VALOR_INICIAL = 25.00; // El objeto comienza en 25.00
     public static final long DURACION_MS = 300000; // 5 minutos de subasta base
@@ -31,7 +30,7 @@ public class ServidorSubasta {
     public static void main(String[] args) {
         int puertoServidor = 7;
 
-        if (args.length == 1)
+        if (args.length > 0)
             puertoServidor = Integer.parseInt(args[0]);
 
         // Establecer el deadline
